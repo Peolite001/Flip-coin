@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Fontawesome/css/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="border relative bg-gradient-to-b from-gray-800 to-rose-950/90 p-[10px] h-dvh w-full">
+       <div class="border p-10 bg-gray-600 p-5 h-full">
+
+           <div class="text-center flex-col space-y-5">
+            <h1 class="text-4xl md:text-5xl text-white text-white drop-shadow-lg drop-shadow-black">Flip the coin</h1>
+            <p class="text-sm md:text-xl text-gray-100/50">Press the coin or the button to flip the coin</p>
+           </div>
+
+           <div>
+                <div id="coinContainer">
+                    <div id="head" class="m-auto cursor-pointer">
+                        <div class="border border-yellow-300 bg-yellow-300 drop-shadow m-auto mt-10 rounded-full h-40 w-40">
+                        <div class="border border-yellow-300 bg-yellow-400 drop-shadow-sm drop-shadow m-auto mt-2 rounded-full h-35 w-35">
+                                <h2 class="text-center text-yellow-300 text-8xl mt-5"><i class="fa-solid fa-dollar-sign"></i></h2>
+                        </div>
+                        </div>
+                    </div>
+                    <div id="tail" class="m-auto cursor-pointer">
+                        <div class="border border-yellow-300 bg-yellow-300 drop-shadow m-auto mt-10 rounded-full h-40 w-40">
+                        <div class="border border-yellow-300 bg-yellow-400 drop-shadow-sm drop-shadow m-auto mt-2 rounded-full h-35 w-35">
+                                <h2 class="text-center text-yellow-300 text-8xl font-bold mt-5">I</h2>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+              <div class="h-15 w-20 m-auto bg-black/20 rounded-full -rotate-x-100"></div>
+
+              <p id="result" class="text-center font-bold text-white text-xl"></p>
+           </div>
+
+           <div class="border-b-3 border-b-sky-700 bg-sky-600 hover:bg-sky-700 hover:border-b-sky-800 rounded-lg text-center h-10 w-30 m-auto mt-10 cursor-pointer ">
+            <button id="btn" class="mt-1 font-bold text-white cursor-pointer">Random</button>
+           </div>
+         </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
